@@ -91,7 +91,7 @@ html {
 }
 
 .ecosystem {
-    max-height: 800px;
+    max-height: 500px !important;
 }
 
 .city-cornet-2 p {
@@ -1266,10 +1266,14 @@ div {
 }
 
 .arroww {
-    position: absolute;
-    right: 0;
+    float: right;
+    position: sticky;
+    top: calc(100% - 60px);
     font-size: 45px;
-    bottom: 15px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: white;
 }
 /* .sticky-arrow {
     position: sticky;
