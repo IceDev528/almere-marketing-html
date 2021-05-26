@@ -84,14 +84,14 @@ html {
     padding-right: 50px;
 }
 
-.city-cornet-2 {
-    max-height: 625px;
-    overflow: auto;
-    position: relative;
-}
-
 .ecosystem {
     max-height: 700px !important;
+}
+
+.city-cornet-2 {
+    max-height: 625px !important;
+    overflow: auto;
+    position: relative;
 }
 
 .city-cornet-2 p {
@@ -192,7 +192,7 @@ a.arroww.white.ondre_i i {
 
 }
 .grey .row .col-lg-6{
-    padding: 180px 0px 100px 12px !important;
+    padding: 230px 0px 100px 12px !important;
 }
 
 .grey .row .col-lg-6 div{
@@ -646,7 +646,7 @@ p.red.fw-bolder {
         .bg-mustard-large {
             background-size: cover;
             background-image: url(images/hockywave.svg);
-            padding: 180px 0 0px;
+            padding: 230px 0 0px;
            
 
         }    
@@ -766,7 +766,7 @@ p.red.fw-bolder {
                 transition: all 0.35s ease;
                 box-shadow: 0px 0px 20px 0px #33333321;
             }
-            /* body.sticky-header:after {               
+            body.sticky-header:after {               
                 top: 0px;
                 opacity: 1;
                 visibility: visible;
@@ -776,7 +776,7 @@ p.red.fw-bolder {
             body.sticky-header .menu-bar {             
                 top: 27px;
                 transition: all 0.4s ease;
-            } */
+            }
             .video_wrap{
 				 position: absolute;
 				 width:100%;
@@ -1050,7 +1050,7 @@ a.show_hide:hover {
 							float:left;
                         }
                         .richard-img {
-                            height: 47vh;
+                            height: 47vh !important;
                             object-fit: cover;
                             padding-bottom: 70px;
                         }
@@ -1254,7 +1254,7 @@ div {
 }
 
 .slider-group .owl-nav button i{
-    color: #f80d02;
+    color: red;
     font-size: 40px;
     font-weight: 400;
 }
@@ -1277,8 +1277,15 @@ div {
     margin-right: -50px;
 }
 
+.arroww-white > a > i {
+    color: white !important;
+}
 .owl-theme .owl-dots .owl-dot span {
     background: white;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: red !important;
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover {
@@ -1323,6 +1330,17 @@ div {
 
 .man-div > a {
     margin-left: 0 !important;
+}
+#scroll-section2 {
+    max-height: 580px !important;
+}
+
+#scroll-section4 {
+    max-height: 850px !important;
+}
+
+#scroll-section5 {
+    max-height: 595px !important;
 }
 
 @media (max-width: 575px) {

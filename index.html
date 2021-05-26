@@ -102,29 +102,22 @@
                         <li><a href="#voorwoord">Voorwoord</a></li>
                         <li><a href="#hetkaninalmere">Het kan in Almere</a></li>
                         <li><a href="#branding">Branding</a></li>
-
                     </ul>
                     <ul>
-
                         <li><a href="#ondernemen">Ondernemen in almere</a></li>
                         <li><a href="#destinatie">Destinatiemarketing</a></li>
                         <li><a href="#publiciteit">Publiciteit & promotie</a></li>
-
-
                     </ul>
                     <ul>
-
                         <li><a href="#evenementen">Evenementen</a></li>
                         <li><a href="#visitalmere">Visit almere</a></li>
                         <li><a href="#netwerkfunctie">Netwerkfunctie</a></li>
 
                     </ul>
                     <ul>
-
                         <li><a href="#bestuurorganisatie">Bestuur en organisatie</a></li>
                         <li><a href="#media">In de media</a></li>
                         <li><a href="#colofon">Colofon</a></li>
-
                     </ul>
                 </div>
             </div>
@@ -164,17 +157,17 @@
                         <img src="assets/acm-1.jpg" alt="" class="img-fluid lazyload w-100 mb-2 lazyload">
                     </div>
                     <div class="col-lg-6 read_more">
-                        <div class="px-5 city-cornet-2 position-relative">
+                        <div class="px-5 city-cornet-2 position-relative" id="scroll-section1">
                             <div class="arroww">
-                                <a onclick="jumptoPrev('jump-section1')"
+                                <a onclick="jumptoPrev('jump-section1', 'scroll-section1')"
                                     class="jump-section1-prev jump-section1-arrow-up arrow-up">
                                     <i class="fal fa-long-arrow-up"></i>
                                 </a>
-                                <a onclick="jumptoNext('jump-section1')" class="jump-section1-next">
+                                <a onclick="jumptoNext('jump-section1', 'scroll-section1')" class="jump-section1-next">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
-                            <div class="jump-section1 active">
+                            <div class="jump-section1 active" id="jump-section1-ele-first">
                                 <p>2020 was een bijzonder jaar: niks werd zoals verwacht. We
                                     begonnen met een bomvolle evenementenkalender; uiteindelijk kon daarvan niets
                                     plaatsvinden en waren we blij dat er toch een aantal creatieve, kleinschalige
@@ -210,7 +203,7 @@
                                     en een geweldige glaskabel in de meterkast om thuiswerken
                                     soepel te laten lopen.</p>
                             </div>
-                            <div class="content jump-section1">
+                            <div class="content jump-section1" id="jump-section1-ele-last">
                                 <img src="assets/acm-3.jpg" class="lazyload img-fluid" alt="">
                                 <p>In dit jaarverslag blikken we nog één keer terug op deze bizarre tijd.
                                     Ondertussen kijken
@@ -369,15 +362,15 @@
                     <div class="col-lg-6 read_more">
                         <div class="px-1 px-sm-5 city-cornet-2 ecosystem position-relative" id="scroll-section2">
                             <div class="arroww">
-                                <a onclick="jumptoPrev('jump-section2')"
+                                <a onclick="jumptoPrev('jump-section2', 'scroll-section2')"
                                     class="jump-section2-prev jump-section2-arrow-up arrow-up">
                                     <i class="fal fa-long-arrow-up"></i>
                                 </a>
-                                <a onclick="jumptoNext('jump-section2')" class="jump-section2-next">
+                                <a onclick="jumptoNext('jump-section2', 'scroll-section2')" class="jump-section2-next">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
-                            <div class="jump-section2 active">
+                            <div class="jump-section2 active" id="jump-section2-ele-first">
                                 <p class="red f-20 mt-0" style="padding-bottom: 0;" id="online-ecosystem"><b>ONLINE
                                         ECOSYSTEEM</b></p>
                                 <p>De marketing van de stad is gericht op het aantrekken van
@@ -560,7 +553,7 @@
                                 <div class="border-btm-div"></div>
                                 <hr class="b-red">
                             </div>
-                            <div class="content jump-section2">
+                            <div class="content jump-section2" id="jump-section2-ele-last">
                                 <p class="fw-bolder h4 red" id="student-almere">STUDENT IN ALMERE</p>
                                 <p>Door corona werden alle lessen aan studenten online
                                     gegeven. Daarom besloten wij onze geplande videocampagne met ALLYLIFE uit te stellen
@@ -628,16 +621,16 @@
                     </div>
                     <div class="col-lg-6 read_more">
                         <div class="px-2 px-sm-5 city-cornet-2 ondre-sec ecosystem" id="scroll-section3">
-                            <div class="arroww">
-                                <a onclick="jumptoPrev('jump-section3')"
+                            <div class="arroww arroww-white">
+                                <a onclick="jumptoPrev('jump-section3', 'scroll-section3')"
                                     class="jump-section3-prev jump-section3-arrow-up arrow-up">
                                     <i class="fal fa-long-arrow-up"></i>
                                 </a>
-                                <a class="jump-section3-next" onclick="jumptoNext('jump-section3')">
+                                <a class="jump-section3-next" onclick="jumptoNext('jump-section3', 'scroll-section3')">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
-                            <div class="jump-section3 active">
+                            <div class="jump-section3 active" id="jump-section3-ele-first">
                                 <p class="fw-bolder h4 red" id="online-campagne">ONLINE CAMPAGNE</p>
                                 <p>
                                     In november en december liep er een display campagne
@@ -751,7 +744,7 @@
                                         target="_blank"><b>www.onderneeminalmere.nl/nl/vestigen/bedrijventerreinen</b></a>
                                 </p>
                             </div>
-                            <div class="content jump-section3">
+                            <div class="content jump-section3" id="jump-section3-ele-last">
                                 <p class="fw-bolder h4 red" id="bruggenbouwr">BRUGGENBOUWER AWARD 2020</p>
                                 <p>
                                     Op de landelijke Dag van de Ondernemer organiseerde de
@@ -777,7 +770,7 @@
 
         <!-- Destinatie  -->
         <section class="city-cornet bg-green p-2 p-sm-5 onder-div destinate"
-            style="margin-top: -100px;padding-top: 80px;" id="destinatie">
+            style="margin-top: -100px; padding-top: 80px !important;" id="destinatie">
             <div class="container">
                 <div class="row px-0">
                     <div class="col-lg-6 mt-5 seperate-line-white">
@@ -805,16 +798,16 @@
                     </div>
                     <div class="col-lg-6 pt-3 pt-sm-5 read_more">
                         <div class="px-2 px-sm-5 city-cornet-2 ecosystem" id="scroll-section4">
-                            <div class="arroww">
-                                <a onclick="jumptoPrev('jump-section4')"
+                            <div class="arroww arroww-white">
+                                <a onclick="jumptoPrev('jump-section4', 'scroll-section4')"
                                     class="jump-section4-prev jump-section4-arrow-up arrow-up">
                                     <i class="fal fa-long-arrow-up"></i>
                                 </a>
-                                <a class="jump-section4-next" onclick="jumptoNext('jump-section4')">
+                                <a class="jump-section4-next" onclick="jumptoNext('jump-section4', 'scroll-section4')">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
-                            <div class="jump-section4 active">
+                            <div class="jump-section4 active" id="jump-section4-ele-first">
                                 <p class="fw-bolder h4 red" id="almere-centrum">ALMERE CENTRUM, DE EEUWIG JONGE
                                     BINNENSTAD</p>
                                 <p>
@@ -914,7 +907,7 @@
                                     ontdekken. </p>
                                 <img src="assets/acm-14.jpg" alt="" class="img-fluid lazyload w-100 ecosystem-img">
                             </div>
-                            <div class="content jump-section4">
+                            <div class="content jump-section4" id="jump-section4-ele-last">
                                 <p class="fw-bolder h4 red" id="stadslandgoed">STADSLANDGOED DE KEMPHAAN</p>
                                 <p>
                                     Door de coronamaatregelen waren de participanten, waaronder Klimbos Fun Forest
@@ -952,17 +945,17 @@
                         </div>
                     </div>
                     <div class="col-lg-6 read_more">
-                        <div class="px-2 px-sm-5 py-4 py-sm-1 city-cornet-2 ecosystem">
+                        <div class="px-2 px-sm-5 py-4 py-sm-1 city-cornet-2 ecosystem" id="scroll-section5">
                             <div class="arroww">
-                                <a onclick="jumptoPrev('jump-section5')"
+                                <a onclick="jumptoPrev('jump-section5', 'scroll-section5')"
                                     class="jump-section5-prev jump-section5-arrow-up arrow-up">
                                     <i class="fal fa-long-arrow-up"></i>
                                 </a>
-                                <a class="jump-section5-next" onclick="jumptoNext('jump-section5')">
+                                <a class="jump-section5-next" onclick="jumptoNext('jump-section5', 'scroll-section5')">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
-                            <div class="jump-section5 active">
+                            <div class="jump-section5 active" id="jump-section5-ele-first">
                                 <p class="fw-bolder h4"> ALMERE IN DE MEDIA</p>
                                 <p>
                                     Dat je hier goed kunt wonen, weten Almeerders natuurlijk
@@ -992,7 +985,7 @@
                                     target="_blank" class="eco-btn btn">Artikel op telegraaf.nl <i
                                         class="fal fa-long-arrow-right"></i></a>
                             </div>
-                            <div class="content jump-section5">
+                            <div class="content jump-section5" id="jump-section5-ele-last">
                                 <div class="image-wrap">
                                     <div>
                                         <p class="wrap-img-p h4 fw-bolder">HOTSPOT 036</p>
@@ -1882,7 +1875,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="px-1 px-sm-5 city-cornet-2 position-relative pb-2 pb-sm-5"
-                            style="max-height: none;overflow: visible;">
+                            style="max-height: none !important;overflow: visible;">
                             <p class="h4 fw-bolder">STAAT VAN BATEN EN LASTEN</p>
                             <table cellpadding="0" cellspacing="0" class="table table-borderless finance_table">
                                 <tbody>
@@ -2905,44 +2898,60 @@
         function jumpTo(id, parent, cont) {
             var expand = $('.' + parent);
             expand.css({ display: "block" });
-
+            var readmore = $('#' + cont + '> .show_hide');
+            readmore.text("Inklappen");
             var contrib = $('#' + cont);
             pos = $('#' + id);
-            contrib.animate({scrollTop: contrib.scrollTop() + (pos.offset().top - contrib.offset().top)}, 500);
+            contrib.animate({scrollTop: contrib.scrollTop() + (pos.offset().top - contrib.offset().top) - 10}, 500);
         }
-        function jumptoPrev(id) {
+        function jumptoPrev(id, cont) {
+            var contrib = $('#' + cont);
 
             if ($('.' + id + '-next')[0].className == id + "-next" + " jump-disable") {
                 $('.' + id + '-next').removeClass("jump-disable");
             }
 
             var target = $('.' + id + '.active').prev()[0];
-            if (target.className == "arroww") {
+            var pos = $('.' + id + '.active').prev();
+            var me = $('.' + id + '.active');
+            var first = $('#' + id + '-ele-first');
+
+            // console.log(me, first[0].className);
+
+            if (me[0].className == first[0].className) {
                 $('.' + id + '-prev')[0].classList.add("jump-disable");
             }
             else {
                 $('.' + id + '.active').removeClass("active");
                 target.classList.add("active");
-                target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                contrib.animate({scrollTop: contrib.scrollTop() + (pos.offset().top - contrib.offset().top - 10)}, 500);
             }
         }
-        function jumptoNext(id) {
+        function jumptoNext(id, cont) {
             var expand = $('.' + id);
             expand.css({ display: "block" });
-
+            var readmore = $('#' + cont + '> .show_hide');
+            readmore.text("Inklappen");
+            
+            var contrib = $('#' + cont);
             $('.' + id + '-arrow-up').css({ display: "block" });
 
             if ($('.' + id + '-prev')[0].className == id + "-prev " + id + "-arrow-up" + " arrow-up jump-disable") {
                 $('.' + id + '-prev').removeClass("jump-disable")
             }
             var target = $('.' + id + '.active').next()[0];
-            if (target.className == "show_hide") {
+            var pos = $('.' + id + '.active').next();
+            var me = $('.' + id + '.active');
+            var last = $('#' + id + '-ele-last');
+
+            if (me[0].className == last[0].className) {
+                console.log("123");
                 $('.' + id + '-next')[0].classList.add("jump-disable");
             }
             else {
                 $('.' + id + '.active').removeClass("active");
                 target.classList.add("active");
-                target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                contrib.animate({scrollTop: contrib.scrollTop() + (pos.offset().top - contrib.offset().top - 10)}, 500);
             }
         }
         $('.slider-group').owlCarousel({
