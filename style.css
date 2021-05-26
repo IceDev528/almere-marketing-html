@@ -85,13 +85,13 @@ html {
 }
 
 .city-cornet-2 {
-    max-height: 700px;
+    max-height: 625px;
     overflow: auto;
     position: relative;
 }
 
 .ecosystem {
-    max-height: 500px !important;
+    max-height: 700px !important;
 }
 
 .city-cornet-2 p {
@@ -355,6 +355,14 @@ i.fal.fa-long-arrow-down {
     font-weight: 400;
     /* -webkit-text-stroke: 1px white; */
 }
+
+i.fal.fa-long-arrow-up {
+    color: #f80d02;
+    font-size: 40px;
+    font-weight: 400;
+    /* -webkit-text-stroke: 1px white; */
+}
+
 .pattern {
     position: relative;
     background-color: #3bb78f;
@@ -758,7 +766,7 @@ p.red.fw-bolder {
                 transition: all 0.35s ease;
                 box-shadow: 0px 0px 20px 0px #33333321;
             }
-            body.sticky-header:after {               
+            /* body.sticky-header:after {               
                 top: 0px;
                 opacity: 1;
                 visibility: visible;
@@ -768,8 +776,7 @@ p.red.fw-bolder {
             body.sticky-header .menu-bar {             
                 top: 27px;
                 transition: all 0.4s ease;
-             
-            }
+            } */
             .video_wrap{
 				 position: absolute;
 				 width:100%;
@@ -978,7 +985,7 @@ a.show_hide:hover {
                        
                         }
                         .desti-img-po {
-                             position: unset;
+                            position: unset;
                             right: 60px;
                             top: 50px;
                             min-height: auto;                            
@@ -1009,11 +1016,6 @@ a.show_hide:hover {
                         }
                         .city-cornet-2.ecosystem .btn {
                             margin-left: 0px;
-                        }
-                        .youtube-link {
-                        
-                            height: 180px;
-                         
                         }
                         .man-one .owl-stage {
                             justify-content: center;
@@ -1268,19 +1270,50 @@ div {
 .arroww {
     float: right;
     position: sticky;
-    top: calc(100% - 60px);
+    top: calc(100% - 120px);
     font-size: 45px;
+    cursor: pointer;
+    display: inline-grid;
 }
 
 .owl-theme .owl-dots .owl-dot span {
     background: white;
 }
-/* .sticky-arrow {
-    position: sticky;
-    font-size: 45px;
-    top: calc(100% - 65px);
-    float: right;
-} */
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: none;
+}
+
+.owl-dots {
+    margin-top: 25px;
+}
+
+.jump-disable {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.arrow-up {
+    display: none;
+}
+
+#publiciteit {
+    padding-top: 80px;
+}
+
+.direct-links {
+    padding-left: 0 !important;
+}
+
+.direct-links > li{
+    display: block;
+}
+
+.direct-links > li > a{
+    color: red !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
 
 @media (max-width: 575px) {
     .seperate-line-red {
@@ -1295,5 +1328,47 @@ div {
 
     .hs-item {
         border-right: 0 !important;
+    }
+
+    .detinatie-img-group {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .destinatie-img1 {
+        width: 45% !important;
+        margin-right: 5% !important;
+    }
+
+    .destinatie-img2 {
+        width: 45% !important;
+    }
+
+    a.show_hide {
+        margin-left: 0 !important;
+    }
+
+    .two-col-sec a.show_hide {
+        margin-left: 20px !important;
+    }
+
+    #branding {
+        padding-top: 0 !important;
+    }
+
+    #netwerkfunctie {
+        margin-top: 20px !important;
+    }
+
+    #destinatie > .container > .row > .col-lg-6 {
+        padding-top: 30px !important;
+    }
+
+    #publiciteit {
+        padding-top: 0 !important;
+    }
+
+    #bestuurorganisatie {
+        padding-top: 0 !important;
     }
 }

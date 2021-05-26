@@ -166,7 +166,10 @@
                     <div class="col-lg-6 read_more">
                         <div class="px-5 city-cornet-2 position-relative">
                             <div class="arroww">
-                                <a onclick="jumptoNext('jump-section1')">
+                                <a onclick="jumptoPrev('jump-section1')" class="jump-section1-prev jump-section1-arrow-up arrow-up">
+                                    <i class="fal fa-long-arrow-up"></i>
+                                </a>
+                                <a onclick="jumptoNext('jump-section1')" class="jump-section1-next">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
@@ -334,6 +337,15 @@
                                     VAN ALMERE
                                 </span>
                             </h1>
+                            <ul class="direct-links">
+                                <li><a onclick="jumpTo('online-ecosystem', 'jump-section2')">ONLINE ECOSYSTEEM</a></li>
+                                <li><a onclick="jumpTo('almeerders', 'jump-section2')">ALMEERDERS STAAN STERK</a></li>
+                                <li><a onclick="jumpTo('international-almere', 'jump-section2')">INTERNATIONAL ALMERE</a></li>
+                                <li><a onclick="jumpTo('tv-formats', 'jump-section2')">TV FORMATS IN ALMERE OPGENOMEN</a></li>
+                                <li><a onclick="jumpTo('writer-residence', 'jump-section2')">WRITER IN RESIDENCE</a></li>
+                                <li><a onclick="jumpTo('uit-almere', 'jump-section2')">UIT IN ALMERE</a></li>
+                                <li><a onclick="jumpTo('student-almere', 'jump-section2')">STUDENT IN ALMERE</a></li>
+                            </ul>
                             <h6 class="fw-bolder">Het imago van Almere wordt steeds beter. Om dit te blijven voeden,
                                 voeren wij doorlopende
                                 marketingprogramma’s uit voor Almere
@@ -352,12 +364,15 @@
                     <div class="col-lg-6 read_more">
                         <div class="px-1 px-sm-5 city-cornet-2 ecosystem position-relative">
                             <div class="arroww">
-                                <a onclick="jumptoNext('jump-section2')">
+                                <a onclick="jumptoPrev('jump-section2')" class="jump-section2-prev jump-section2-arrow-up arrow-up">
+                                    <i class="fal fa-long-arrow-up"></i>
+                                </a>
+                                <a onclick="jumptoNext('jump-section2')" class="jump-section2-next">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
                             <div class="jump-section2 active">
-                                <p class="red f-20 mt-0" style="padding-bottom: 0;"><b>ONLINE ECOSYSTEEM</b></p>
+                                <p class="red f-20 mt-0" style="padding-bottom: 0;" id="online-ecosystem"><b>ONLINE ECOSYSTEEM</b></p>
                                 <p>De marketing van de stad is gericht op het aantrekken van
                                     bezoekers, bewoners, bedrijven en studenten. Wij maken
                                     hiervoor gebruik van een online ecosysteem: een gedeelde
@@ -384,7 +399,7 @@
                                 <div class="border-btm-div"></div>
                             </div>
                             <div class="content jump-section2">
-                                <p class="fw-bolder h4 red">ALMEERDERS STAAN STERK </p>
+                                <p class="fw-bolder h4 red" id="almeerders">ALMEERDERS STAAN STERK</p>
                                 <p>Omdat Nederland in maart in lockdown ging, startten we
                                     de campagne ‘Almeerders staan sterk’. Via ons platform
                                     konden Almeerders elkaar vinden met initiatieven als een
@@ -405,7 +420,7 @@
                                 <div class="border-btm-div"></div>
                             </div>
                             <div class="content jump-section2">
-                                <p class="fw-bolder h4 red">INTERNATIONAL ALMERE </p>
+                                <p class="fw-bolder h4 red" id="international-almere">INTERNATIONAL ALMERE</p>
                                 <p>Wij hebben in 2019 met de gemeente de website
                                     thisisalmere.com opgezet voor internationals en expats. In
                                     2020 hebben we deze website verder geüpdatet en zijn er
@@ -424,7 +439,7 @@
                                 <div class="border-btm-div"></div>
                             </div>
                             <div class="content jump-section2">
-                                <p class="fw-bolder h4 red">TV FORMATS IN ALMERE OPGENOMEN </p>
+                                <p class="fw-bolder h4 red" id="tv-formats">TV FORMATS IN ALMERE OPGENOMEN</p>
                                 <p>Door actief mee te denken en ruimte te bieden aan
                                     flmproducenten wordt Almere populair als flmlocatie. In
                                     het voorjaar draaide de bioscoopflm ‘Project Gio’ in de
@@ -439,14 +454,12 @@
                                             src="images/ACM-1-TVformatsinalmereopgenomen.jpg"></div>
                                 </a>
                                 <div class="border-btm-div"></div>
-                            </div>
-                            <div class="content jump-section2">
                                 <div class="image-wrap">
                                     <div>
                                         <p class="wrap-img-p"> Ondanks de beperkingen is het in de zomer toch gelukt een
                                             speelflm op te nemen in Almere: Meskina. Een romantische komedie met
-                                            hoofdrolspelers als Maryam Hassouni, Nasrdin<img src="assets/acm-7.jpg"
-                                                class="wrapped_img lazyload">
+                                            hoofdrolspelers als Maryam Hassouni, Nasrdin
+                                            <img src="assets/acm-7.jpg" class="wrapped_img lazyload">
                                             Char, Soundos el Ahmadi en Najib Amali. De film speelt zich onder andere af
                                             in restaurant Nul36 op de Grote Markt en bevat mooie beelden van Almere. De
                                             productie is ondersteund
@@ -459,8 +472,6 @@
                                 </div>
                                 <br>
                                 <div class="border-btm-grey"></div>
-                            </div>
-                            <div class="content jump-section2">
                                 <p>Half november was straatvoetballer en presentator Soufane
                                     Touzani, die voor zijn tv programma Tiki Taka Touzani langsgaat bij bekende
                                     Nederlandse
@@ -476,7 +487,7 @@
                             <div class="content jump-section2">
                                 <div class="image-wrap">
                                     <div>
-                                        <p class="fw-bolder h4 red wrap-img-p">WRITER IN RESIDENCE</p>
+                                        <p class="fw-bolder h4 red wrap-img-p" id="writer-residence">WRITER IN RESIDENCE</p>
                                         <p class="wrap-img-p">De vierde gastschrijver in de serie ‘Almere Verhalen’ is
                                             Niña
                                             Weijers. In september werd zij voor een half jaar officieel
@@ -506,7 +517,7 @@
                                 <div class="border-btm-div"></div>
                             </div>
                             <div class="content jump-section2">
-                                <p class="fw-bolder h4 red ">UIT IN ALMERE </p>
+                                <p class="fw-bolder h4 red " id="uit-almere">UIT IN ALMERE</p>
                                 <p class="">In opdracht van het Cultuurfonds Almere beheren wij
                                     sinds 2016 uitinalmere.nl, het overkoepelende platform
                                     voor de culturele sector in Almere. Via deze website
@@ -541,7 +552,7 @@
                                 <hr class="b-red">
                             </div>
                             <div class="content jump-section2">
-                                <p class="fw-bolder h4 red">STUDENT IN ALMERE </p>
+                                <p class="fw-bolder h4 red" id="student-almere">STUDENT IN ALMERE</p>
                                 <p>Door corona werden alle lessen aan studenten online
                                     gegeven. Daarom besloten wij onze geplande videocampagne met ALLYLIFE uit te stellen
                                     naar 2021. Wel maakten we samen met ALLYLIFE introductievideo’s voor de Almeerse
@@ -583,6 +594,14 @@
                                     IN ALMERE
                                 </span>
                             </h1>
+                            <ul class="direct-links">
+                                <li><a onclick="jumpTo('online-campagne', 'jump-section3')">ONLINE CAMPAGNE</a></li>
+                                <li><a onclick="jumpTo('duurzaam', 'jump-section3')">DUURZAAM ONDERNEMEN</a></li>
+                                <li><a onclick="jumpTo('onderneming', 'jump-section3')">ONDERNEMING VAN HET JAAR</a></li>
+                                <li><a onclick="jumpTo('ondernemers', 'jump-section3')">ONDERNEMERS STAAN STERK</a></li>
+                                <li><a onclick="jumpTo('bedrijventerrinen', 'jump-section3')">BEDRIJVENTERREINEN</a></li>
+                                <li><a onclick="jumpTo('bruggenbouwr', 'jump-section3')">BRUGGENBOUWER AWARD 2020</a></li>
+                            </ul>
                             <p class="ondre_text">Samen met de afdeling Economische Zaken van de Gemeente Almere maakten
                                 we grote stappen. Almere Tech Talks, zomertafels en webcolleges kregen een podium op
                                 onze website, toen nog hetkaninalmere.nl/ondernemen. Omdat het onderdeel ondernemen op
@@ -598,12 +617,15 @@
                     <div class="col-lg-6 read_more">
                         <div class="px-2 px-sm-5 city-cornet-2 ondre-sec ecosystem">
                             <div class="arroww">
-                                <a class="white" onclick="jumptoNext('jump-section3')">
+                                <a onclick="jumptoPrev('jump-section3')" class="jump-section3-prev jump-section3-arrow-up arrow-up">
+                                    <i class="fal fa-long-arrow-up"></i>
+                                </a>
+                                <a class="jump-section3-next" onclick="jumptoNext('jump-section3')">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
                             <div class="jump-section3 active">
-                                <p class="fw-bolder h4 red">ONLINE CAMPAGNE</p>
+                                <p class="fw-bolder h4 red" id="online-campagne">ONLINE CAMPAGNE</p>
                                 <p>
                                     In november en december liep er een display campagne
                                     om de naamsbekendheid van Almere als ondernemersstad
@@ -614,7 +636,7 @@
                             </div>
                            
                             <!-- toggle button start-->
-                            <div class="jump-section3 content">
+                            <div class="content jump-section3">
                                 <p>In samenwerking met SenS Online werden ruim
                                     8.000.000 vertoningen gerealiseerd. Een combinatie van online advertenties en een
                                     nieuwe
@@ -633,8 +655,8 @@
                                 </a>
                                 <br>
                             </div>
-                            <div class="jump-section3 content">
-                                <p class="fw-bolder h4 red">DUURZAAM ONDERNEMEN</p>
+                            <div class="content jump-section3">
+                                <p class="fw-bolder h4 red" id="duurzaam">DUURZAAM ONDERNEMEN</p>
                                 <p>
                                     Almere heeft grote ambities als het gaat om het verduurzamen
                                     van de stad. Zo is de jongste stad van Nederland hard op weg om energieneutraal,
@@ -655,8 +677,8 @@
                                         class="fal fa-long-arrow-right"></i></a>
                                 <br><br>
                             </div>
-                            <div class="jump-section3 content">
-                                <p class="fw-bolder h4 red" id="idthree">ONDERNEMING VAN HET JAAR</p>
+                            <div class="content jump-section3">
+                                <p class="fw-bolder h4 red" id="onderneming">ONDERNEMING VAN HET JAAR</p>
                                 <p>
                                     In opdracht van de gemeente voerden wij de
                                     marketingcommunicatie rondom de verkiezing ‘Onderneming
@@ -685,8 +707,8 @@
                                 </a>
                                 <br>
                             </div>
-                            <div class="jump-section3 content">
-                                <p class="fw-bolder h4 red">ONDERNEMERS STAAN STERK</p>
+                            <div class="content jump-section3">
+                                <p class="fw-bolder h4 red" id="ondernemers">ONDERNEMERS STAAN STERK</p>
                                 <p>
 
                                     In samenwerking met de gemeente Almere hebben wij
@@ -702,8 +724,8 @@
                                         style="color:#fff"><b>www.onderneeminalmere.nl/nl/ondernemersstaansterk </b></a>
                                 </p>
                             </div>
-                            <div class="jump-section3 content">
-                                <p class="fw-bolder h4 red">BEDRIJVENTERREINEN</p>
+                            <div class="content jump-section3">
+                                <p class="fw-bolder h4 red" id="bedrijventerrinen">BEDRIJVENTERREINEN</p>
                                 <p>
                                     bedrijventerreinenalmere.nl realiseerde in 2020 bijna 15.000
                                     sessies, 6.000 meer dan het jaar ervoor. Wij hielden de
@@ -716,8 +738,8 @@
                                         target="_blank"><b>www.onderneeminalmere.nl/nl/vestigen/bedrijventerreinen</b></a>
                                 </p>
                             </div>
-                            <div class="jump-section3 content">
-                                <p class="fw-bolder h4 red">BRUGGENBOUWER AWARD 2020</p>
+                            <div class="content jump-section3">
+                                <p class="fw-bolder h4 red" id="bruggenbouwr">BRUGGENBOUWER AWARD 2020</p>
                                 <p>
                                     Op de landelijke Dag van de Ondernemer organiseerde de
                                     gemeente Almere het online evenement ‘Samen sterker uit
@@ -752,22 +774,31 @@
                                     MARKETING
                                 </span>
                             </h1>
-                            <div class="position-relative">
-                                <img src="assets/acm-9.jpg" alt="" class="img-fluid lazyload w-100 desti-img">
+                            <ul class="direct-links">
+                                <li><a onclick="jumpTo('almere-centrum', 'jump-section4')">ALMERE CENTRUM, DE EEUWIG JONGE BINNENSTAD</a></li>
+                                <li><a onclick="jumpTo('national-park', 'jump-section4')">NATIONAAL PARK</a></li>
+                                <li><a onclick="jumpTo('floriade-expo', 'jump-section4')">FLORIADE EXPO 2022</a></li>
+                                <li><a onclick="jumpTo('stadslandgoed', 'jump-section4')">STADSLANDGOED DE KEMPHAAN</a></li>
+                            </ul>
+                            <div class="position-relative detinatie-img-group">
+                                <img src="assets/acm-9.jpg" alt="" class="img-fluid lazyload w-100 desti-img destinatie-img1">
                                 <img src="assets/acm-10.jpg" alt=""
-                                    class="img-fluid lazyload w-100 desti-img desti-img-po">
+                                    class="img-fluid lazyload w-100 desti-img desti-img-po destinatie-img2">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 pt-3 pt-sm-5 read_more">
                         <div class="px-2 px-sm-5 city-cornet-2 ecosystem">
                             <div class="arroww">
-                                <a class="white ondre_i" onclick="jumptoNext('jump-section4')">
+                                <a onclick="jumptoPrev('jump-section4')" class="jump-section4-prev jump-section4-arrow-up arrow-up">
+                                    <i class="fal fa-long-arrow-up"></i>
+                                </a>
+                                <a class="jump-section4-next" onclick="jumptoNext('jump-section4')">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
                             <div class="jump-section4 active">
-                                <p class="fw-bolder h4 red">ALMERE CENTRUM, DE EEUWIG JONGE BINNENSTAD</p>
+                                <p class="fw-bolder h4 red" id="almere-centrum">ALMERE CENTRUM, DE EEUWIG JONGE BINNENSTAD</p>
                                 <p>
                                     De gemeente Almere heeft een tienjarenplan voor
                                     Almere Centrum opgesteld. In samenwerking met
@@ -778,7 +809,7 @@
                                     ontmoeten, beleven, studeren, winkelen, wonen en werken
                                     voor Almeerders en de regio centraal staan. </p>
                             </div>
-                            <div class="jump-section4 content">
+                            <div class="content jump-section4">
                                 <p>Wij leveren een belangrijke bijdrage aan de uitvoering van
                                     deze visie en voerden in opdracht van de OVSA de marketing
                                     communicatie voor Almere Centrum uit. Doel van onze
@@ -823,8 +854,8 @@
                                 <img src="assets/acm-11.jpg" alt="" class="img-fluid lazyload w-100 ecosystem-img">
                                 <img src="assets/acm-12.jpg" alt="" class="img-fluid lazyload w-100 ecosystem-img">
                             </div>
-                            <div class="jump-section4 content">
-                                <p class="fw-bolder h4 red">NATIONAAL PARK </p>
+                            <div class="content jump-section4">
+                                <p class="fw-bolder h4 red" id="national-park">NATIONAAL PARK</p>
                                 <p>
                                     De Almeerse kant van de Oostvaardersplassen
                                     (Oostvaardersplassen Almere) is een van de ontvangstgebieden van het
@@ -847,8 +878,8 @@
                                     afgerond. </p>
                                 <img src="assets/acm-13.jpg" alt="" class="img-fluid lazyload w-100 ecosystem-img">
                             </div>
-                            <div class="jump-section4 content">
-                                <p class="fw-bolder h4 red">FLORIADE EXPO 2022 </p>
+                            <div class="content jump-section4">
+                                <p class="fw-bolder h4 red" id="floriade-expo">FLORIADE EXPO 2022</p>
                                 <p>
                                     Nog een jaar te gaan en dan vindt Floriade Expo 2022 in
                                     Almere plaats. Wij geloven dat een stevige samenwerking zorgt voor een duurzaam
@@ -865,8 +896,8 @@
                                     ontdekken. </p>
                                 <img src="assets/acm-14.jpg" alt="" class="img-fluid lazyload w-100 ecosystem-img">
                             </div>
-                            <div class="jump-section4 content">
-                                <p class="fw-bolder h4 red">STADSLANDGOED DE KEMPHAAN </p>
+                            <div class="content jump-section4">
+                                <p class="fw-bolder h4 red" id="stadslandgoed">STADSLANDGOED DE KEMPHAAN</p>
                                 <p>
                                     Door de coronamaatregelen waren de participanten, waaronder Klimbos Fun Forest
                                     Almere, het Buitencentrum en de
@@ -888,7 +919,7 @@
         </section>
 
         <!-- Publiciteit -->
-        <section class="city-cornet  py-2 py-sm-5 px-3 px-sm-1" id="publiciteit" style="padding-top:80px !important;">
+        <section class="city-cornet  py-2 py-sm-5 px-3 px-sm-1" id="publiciteit">
             <div class="container">
                 <div class="row py-1 py-sm-4 pt-5">
                     <div class="col-lg-6 seperate-line-red">
@@ -905,7 +936,10 @@
                     <div class="col-lg-6 read_more">
                         <div class="px-2 px-sm-5 py-4 py-sm-1 city-cornet-2 ecosystem">
                             <div class="arroww">
-                                <a href="#idsix">
+                                <a onclick="jumptoPrev('jump-section5')" class="jump-section5-prev jump-section5-arrow-up arrow-up">
+                                    <i class="fal fa-long-arrow-up"></i>
+                                </a>
+                                <a class="jump-section5-next" onclick="jumptoNext('jump-section5')">
                                     <i class="fal fa-long-arrow-down"></i>
                                 </a>
                             </div>
@@ -921,7 +955,7 @@
 
                                 </p>
                             </div>
-                            <div class="jump-section5 content">
+                            <div class="content jump-section5">
                                 <p> Naar aanleiding van een artikel in De Telegraaf “Het geluk
                                     woont in Almere” schoven Ali B. en burgemeester Franc
                                     Weerwind bij Eva Jinek aan om te vertellen waarom het zo
@@ -938,7 +972,7 @@
                                     target="_blank" class="eco-btn btn">Artikel op telegraaf.nl <i
                                         class="fal fa-long-arrow-right"></i></a>
                             </div>
-                            <div class="jump-section5 content">
+                            <div class="content jump-section5">
                                 <div class="image-wrap">
                                     <div>
                                         <p class="wrap-img-p h4 fw-bolder">HOTSPOT 036</p>
@@ -1094,7 +1128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 mt-5">
+                    <div class="col-lg-6">
                         <div class="mt-4">
                             <img src="assets/acm-16.jpg" alt="" class="mt-5 img-fluid w-100 lazyload">
                         </div>
@@ -1596,7 +1630,7 @@
                         <div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="px-3">
+                                    <div class="pr-3">
                                         <p class="red fw-bolder">BUREAU VAN DE STICHTING</p>
                                         <p>
                                             Wij zijn een zelfstandige stichting,
@@ -1840,11 +1874,42 @@
             x.classList.toggle("change");
             x.classList.toggle('')
         }
-        function jumptoNext(id) {
-            var target = $('.' + id + '.active').next()[0];
-            $('.' + id + '.active').removeClass("active");
-            target.classList.add("active");
+        function jumpTo(id, parent) {
+            var expand = $('.' + parent);
+            expand.css({display: "block"});
+            var target = $('#' + id)[0];
             target.scrollIntoView({behavior: "smooth", block: "nearest"});
+        }
+        function jumptoPrev(id) {
+            if ($('.' + id + '-next')[0].className == id + "-next" + " jump-disable") {
+                $('.' + id + '-next').removeClass("jump-disable");
+            }
+
+            var target = $('.' + id + '.active').prev()[0];
+            if(target.className == "arroww") {
+                $('.' + id + '-prev')[0].classList.add("jump-disable");
+            }
+            else {
+                $('.' + id + '.active').removeClass("active");
+                target.classList.add("active");
+                target.scrollIntoView({behavior: "smooth", block: "nearest"});
+            }
+        }
+        function jumptoNext(id) {
+            $('.' + id + '-arrow-up').css({display: "block"});
+
+            if ($('.' + id + '-prev')[0].className == id + "-prev " + id + "-arrow-up" + " arrow-up jump-disable") {
+                $('.' + id + '-prev').removeClass("jump-disable")
+            }
+            var target = $('.' + id + '.active').next()[0];
+            if(target.className == "show_hide") {
+                $('.' + id + '-next')[0].classList.add("jump-disable");
+            }
+            else {
+                $('.' + id + '.active').removeClass("active");
+                target.classList.add("active");
+                target.scrollIntoView({behavior: "smooth", block: "nearest"});
+            }
         }
         $('.slider-group').owlCarousel({
             loop: false,
