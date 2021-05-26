@@ -1274,6 +1274,7 @@ div {
     font-size: 45px;
     cursor: pointer;
     display: inline-grid;
+    margin-right: -50px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -1305,14 +1306,23 @@ div {
     padding-left: 0 !important;
 }
 
-.direct-links > li{
+.direct-links > li {
     display: block;
+    cursor: pointer;
 }
 
-.direct-links > li > a{
+.direct-links > li > a {
     color: red !important;
     font-weight: bold !important;
-    text-decoration: none !important;
+    text-decoration: underline !important;
+}
+
+.white-links > li > a {
+    color: white !important;
+}
+
+.man-div > a {
+    margin-left: 0 !important;
 }
 
 @media (max-width: 575px) {
@@ -1370,5 +1380,9 @@ div {
 
     #bestuurorganisatie {
         padding-top: 0 !important;
+    }
+
+    .arroww {
+        margin-right: 0px !important;
     }
 }
