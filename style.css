@@ -1299,14 +1299,14 @@ div {
 .owl-prev {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -45px;
     height: 100%;
 }
 
 .owl-next {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -45px;
     height: 100%;
 }
 
