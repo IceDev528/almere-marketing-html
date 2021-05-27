@@ -773,7 +773,7 @@ p.red.fw-bolder {
                 transition: all 0.35s ease;
                 box-shadow: 0px 0px 20px 0px #33333321;
             }
-            body.sticky-header .menu-bar {             
+            body.sticky-header .menu-bar {       
                 top: 27px;
                 transition: all 0.4s ease;
             }
@@ -1033,7 +1033,7 @@ a.show_hide:hover {
 							top: 0px;
 						}
                         .menu-bar {
-                            top: 60px;
+                            top: 10px !important;
     						left: 20px;
                         }
 						#myVideo{
@@ -1296,6 +1296,20 @@ div {
     margin-top: 25px;
 }
 
+.owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.owl-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
 .jump-disable {
     opacity: 0.5;
     cursor: default;
@@ -1402,5 +1416,18 @@ div {
 
     .arroww {
         margin-right: 0px !important;
+    }
+
+    .direct-links {
+        display: none;
+    }
+
+    img#logo {
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+    body:after {
+        height: 75px;
     }
 }
