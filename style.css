@@ -1357,11 +1357,6 @@ div {
     max-height: 595px !important;
 }
 
-#visitalmere {
-    position: relative;
-    z-index: 1;
-}
-
 @media (max-width: 575px) {
     
     .almere-container {
@@ -1456,5 +1451,10 @@ div {
 
     #productont > .container > .bg-green {
         background-image: url(images/smallwavegreen.svg) !important;
+    }
+
+    #visitalmere {
+        position: relative;
+        z-index: 1;
     }
 }
