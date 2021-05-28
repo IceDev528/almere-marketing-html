@@ -1093,7 +1093,7 @@ a.show_hide:hover {
                         }
                         .wikling_text{
                             padding-right: 0px;
-                            padding-top: 50px !important;
+                            padding-top: 100px !important;
                         }
                         section.travel-div p {
                             padding: 25px 20px;
@@ -1357,7 +1357,26 @@ div {
     max-height: 595px !important;
 }
 
+#visitalmere {
+    position: relative;
+    z-index: 1;
+}
+
 @media (max-width: 575px) {
+    
+    .almere-container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .owl-prev {
+        left: 0px !important;
+    }
+
+    .owl-next {
+        right: 0px !important;
+    }
+
     .seperate-line-red {
         border-bottom: 2px solid #ff0000;
         border-right: 0 !important;
@@ -1429,5 +1448,13 @@ div {
 
     body:after {
         height: 75px;
+    }
+
+    #productont {
+        margin-top: -100px !important;
+    }
+
+    #productont > .container > .bg-green {
+        background-image: url(images/smallwavegreen.svg) !important;
     }
 }
